@@ -1,0 +1,358 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>About Tanzania | Tanzania Safari Channel</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#496455",
+                        "secondary-fixed-dim": "#f9bd3a",
+                        "tertiary-fixed-dim": "#e7bdb1",
+                        "surface-container": "#f0eded",
+                        "background": "#fcf9f8",
+                        "error-container": "#ffdad6",
+                        "secondary": "#7b5800",
+                        "on-primary-fixed": "#062014",
+                        "on-surface": "#1c1b1b",
+                        "inverse-primary": "#b0cdbb",
+                        "on-surface-variant": "#424844",
+                        "primary-container": "#2d4739",
+                        "surface-container-high": "#eae7e7",
+                        "secondary-container": "#fcbf3c",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e5e2e1",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#324c3e",
+                        "tertiary-container": "#573b32",
+                        "surface-variant": "#e5e2e1",
+                        "primary-fixed-dim": "#b0cdbb",
+                        "primary-fixed": "#ccead6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#2c160e",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#98b5a3",
+                        "inverse-on-surface": "#f3f0ef",
+                        "primary": "#173124",
+                        "surface": "#fcf9f8",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-background": "#1c1b1b",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#3f251d",
+                        "on-tertiary-fixed-variant": "#5d4037",
+                        "on-tertiary-container": "#cda59a",
+                        "tertiary-fixed": "#ffdbd0",
+                        "surface-dim": "#dcd9d9",
+                        "outline": "#727973",
+                        "surface-bright": "#fcf9f8",
+                        "on-secondary-container": "#6e4f00",
+                        "inverse-surface": "#313030",
+                        "outline-variant": "#c2c8c2",
+                        "secondary-fixed": "#ffdea5",
+                        "surface-container-low": "#f6f3f2",
+                        "on-secondary-fixed": "#271900",
+                        "on-secondary-fixed-variant": "#5d4200"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "80px",
+                        "stack-sm": "16px",
+                        "margin-mobile": "24px",
+                        "stack-md": "32px",
+                        "gutter": "32px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Work Sans"],
+                        "display-lg-mobile": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "body-md": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "display-lg": ["Montserrat"],
+                        "headline-lg": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "letterSpacing": "0.01em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(23, 49, 36, 0.4) 0%, rgba(23, 49, 36, 0) 50%, rgba(252, 249, 248, 1) 100%);
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar from Shared Components -->
+<header class="docked full-width top-0 sticky z-50 transition-colors duration-300" id="main-nav">
+<div class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="font-display-lg text-headline-md font-bold text-primary dark:text-inverse-primary"><img src="assets/img/Tanzania%20Safari%20Channel%20logo.png" alt="Tanzania Safari Channel" class="h-14 w-auto object-contain"></div>
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="font-body-md text-body-md uppercase tracking-wider text-white dark:text-surface-variant hover:text-secondary-fixed transition-colors duration-300" href="index.html">Home</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-secondary-container dark:text-secondary-fixed border-b-2 border-secondary-container pb-1" href="index.html#destinations">Destinations</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-white dark:text-surface-variant hover:text-secondary-fixed transition-colors duration-300" href="honeymoon.html">Honeymoon Deals</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-white dark:text-surface-variant hover:text-secondary-fixed transition-colors duration-300" href="foreigner-tours.html">Foreigner Tours</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-white dark:text-surface-variant hover:text-secondary-fixed transition-colors duration-300" href="car-rentals.html">Car Rentals</a>
+</nav>
+<a class="bg-primary text-on-primary px-8 py-3 font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary-fixed-dim hover:text-on-secondary-fixed transition-all active:scale-95" href="inquire.html">Inquire Now</a>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[921px] min-h-[600px] flex items-end overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A sprawling, cinematic wide-angle shot of the Serengeti National Park at dawn. The vast golden grasslands are bathed in a soft, ethereal orange light as the sun begins to rise over distant flat-topped acacia trees. The atmosphere is peaceful and grand, capturing the epic scale of the Tanzanian wilderness in a premium editorial photography style." style="background-image: url('assets/img/image-001.jpg')"></div>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-desktop pb-stack-lg">
+<div class="max-w-3xl reveal-on-scroll">
+<span class="font-label-caps text-label-caps text-secondary-container bg-primary/80 px-4 py-2 inline-block mb-6 uppercase tracking-[0.2em]">Authentic East Africa</span>
+<h1 class="font-display-lg text-display-lg text-primary mb-8">A Land of Wonders</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+                        Tanzania is a country defined by its spectacular natural beauty and vibrant cultural tapestry. From the heights of Kilimanjaro to the depths of the Ngorongoro Crater, every horizon tells a story of survival and majesty.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Cultural Heritage Section -->
+<section class="py-stack-lg bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="reveal-on-scroll">
+<div class="aspect-[4/5] bg-cover bg-center" data-alt="A high-contrast editorial portrait of a Maasai warrior standing on the Tanzanian plains. He is dressed in a vibrant red shuka, decorated with intricate beaded jewelry. The lighting is dramatic, highlighting the strength and dignity in his expression against a backdrop of the boundless African sky. The visual style is crisp, clean, and respectful." style="background-image: url('assets/img/image-002.jpg')"></div>
+</div>
+<div class="reveal-on-scroll" style="transition-delay: 200ms">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8 border-l-4 border-secondary-container pl-6">Cultural Heritage</h2>
+<div class="space-y-6">
+<h3 class="font-headline-md text-headline-md text-primary">The Maasai &amp; Hadzabe</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Tanzania is home to over 120 ethnic groups, each contributing to the nation's rich social fabric. The Maasai, known for their distinctive customs and dress, live in harmony with the wild landscapes of the north.
+                            </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Further west, the Hadzabe people continue to live as one of the last true hunter-gatherer societies on earth, offering a profound connection to humanity's ancestral roots and a deep wisdom of the natural world.
+                            </p>
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary border-b-2 border-secondary-container pb-1 hover:text-secondary transition-colors group" href="#">
+                                EXPLORE CULTURES
+                                <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Natural Diversity Bento Grid -->
+<section class="py-stack-lg bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-stack-md reveal-on-scroll">
+<h2 class="font-display-lg text-headline-lg text-primary mb-4">Natural Diversity</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+                        A sanctuary for the world's most iconic wildlife, Tanzania hosts the greatest concentration of animals per square kilometer on the continent.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter h-auto md:h-[800px]">
+<!-- Large Feature: The Big Five -->
+<div class="md:col-span-8 md:row-span-2 relative group overflow-hidden reveal-on-scroll">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A powerful close-up of a majestic African lion in the Serengeti. Its golden mane is caught in the warm afternoon light, and its gaze is focused and intense. The background is a soft-focus blur of the savannah, creating a premium National Geographic editorial feel. High detail, vibrant natural colors, and sharp focus on the eyes." style="background-image: url('assets/img/image-003.jpg')"></div>
+<div class="absolute bottom-0 left-0 right-0 p-stack-md bg-gradient-to-t from-primary/80 to-transparent">
+<h3 class="font-headline-lg text-white mb-2">The Big Five</h3>
+<p class="font-body-md text-white/90 max-w-lg">Witness the majesty of the Lion, Leopard, Elephant, Buffalo, and Rhino in their natural habitat.</p>
+</div>
+</div>
+<!-- Top Right: Great Migration -->
+<div class="md:col-span-4 relative group overflow-hidden reveal-on-scroll" style="transition-delay: 150ms">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="An aerial view of the Great Migration across the Mara River. Thousands of wildebeest and zebras are seen moving in a massive, swirling formation across the golden landscape. The composition is dynamic and captures the immense energy of the world's largest land mammal migration. Soft lighting, high editorial quality." style="background-image: url('assets/img/image-004.jpg')"></div>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label-caps text-white border-2 border-white px-6 py-2">GREAT MIGRATION</span>
+</div>
+</div>
+<!-- Bottom Right: Birdlife -->
+<div class="md:col-span-4 relative group overflow-hidden reveal-on-scroll" style="transition-delay: 300ms">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A flock of vibrant pink flamingos on the shores of Lake Manyara. The bright pink of the birds contrasts beautifully with the deep blue water and the green escarpment in the background. The lighting is crisp and bright, highlighting the delicate textures of the feathers. Premium landscape photography aesthetic." style="background-image: url('assets/img/image-005.jpg')"></div>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label-caps text-white border-2 border-white px-6 py-2">AVIAN WONDERS</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Travel Wisdom Section -->
+<section class="py-stack-lg bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row gap-gutter">
+<div class="w-full md:w-1/3 reveal-on-scroll">
+<h2 class="font-headline-lg text-headline-lg text-primary sticky top-32">Travel Wisdom</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4">Essential knowledge for planning your Tanzanian odyssey.</p>
+</div>
+<div class="w-full md:w-2/3 space-y-gutter reveal-on-scroll" style="transition-delay: 200ms">
+<!-- Accordion Item 1 -->
+<div class="border-b border-outline-variant pb-stack-sm group cursor-pointer" onclick="this.classList.toggle('active')">
+<div class="flex justify-between items-center py-4">
+<h4 class="font-headline-md text-primary">When to Visit</h4>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-[.active]:rotate-180">expand_more</span>
+</div>
+<div class="max-h-0 overflow-hidden transition-all duration-300 group-[.active]:max-h-96">
+<p class="font-body-md text-on-surface-variant pb-6 leading-relaxed">
+                                    The best time for a safari is during the dry season from June to October. For bird watching and lush green landscapes, the "short rains" in November and December offer a unique perspective. The Great Migration typically crosses the Mara River from July to September.
+                                </p>
+</div>
+</div>
+<!-- Accordion Item 2 -->
+<div class="border-b border-outline-variant pb-stack-sm group cursor-pointer" onclick="this.classList.toggle('active')">
+<div class="flex justify-between items-center py-4">
+<h4 class="font-headline-md text-primary">What to Pack</h4>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-[.active]:rotate-180">expand_more</span>
+</div>
+<div class="max-h-0 overflow-hidden transition-all duration-300 group-[.active]:max-h-96">
+<ul class="font-body-md text-on-surface-variant pb-6 space-y-2 list-none">
+<li class="flex items-center gap-3"><span class="w-2 h-2 bg-secondary-container"></span> Lightweight, neutral-colored clothing (khaki, olive, tan)</li>
+<li class="flex items-center gap-3"><span class="w-2 h-2 bg-secondary-container"></span> Warm layers for early morning game drives</li>
+<li class="flex items-center gap-3"><span class="w-2 h-2 bg-secondary-container"></span> High-quality binoculars and a zoom camera lens</li>
+<li class="flex items-center gap-3"><span class="w-2 h-2 bg-secondary-container"></span> Eco-friendly sunscreen and insect repellent</li>
+</ul>
+</div>
+</div>
+<!-- Accordion Item 3 -->
+<div class="border-b border-outline-variant pb-stack-sm group cursor-pointer" onclick="this.classList.toggle('active')">
+<div class="flex justify-between items-center py-4">
+<h4 class="font-headline-md text-primary">Visa &amp; Health</h4>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-[.active]:rotate-180">expand_more</span>
+</div>
+<div class="max-h-0 overflow-hidden transition-all duration-300 group-[.active]:max-h-96">
+<p class="font-body-md text-on-surface-variant pb-6 leading-relaxed">
+                                    Most visitors require a visa, which can be obtained upon arrival or online. Yellow Fever vaccination is mandatory if traveling from an endemic country. Anti-malarial precautions are highly recommended for most safari destinations.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="relative py-stack-lg overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-40" data-alt="A wide-angle, low-angle shot looking up at a silhouette of a luxury safari vehicle against a deep purple and orange twilight sky. The vastness of the horizon is punctuated only by the distant shape of an acacia tree. The mood is aspirational, premium, and full of the promise of adventure. Minimalist composition with significant copy space." style="background-image: url('assets/img/image-006.jpg')"></div>
+<div class="absolute inset-0 bg-primary/90"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-desktop text-center">
+<div class="max-w-3xl mx-auto reveal-on-scroll">
+<h2 class="font-display-lg text-display-lg text-white mb-8">Start Your Journey</h2>
+<p class="font-body-lg text-white/80 mb-12">
+                        Your Tanzanian adventure is waiting to be curated. Experience the ultimate luxury of untamed nature.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-gutter justify-center">
+<a class="bg-secondary-container text-on-secondary-container px-10 py-5 font-label-caps text-label-caps uppercase tracking-widest hover:bg-white hover:text-primary transition-all active:scale-95 flex items-center justify-center gap-2" href="#">
+                            VIEW SAFARI PACKAGES
+                        </a>
+<a class="border-2 border-white text-white px-10 py-5 font-label-caps text-label-caps uppercase tracking-widest hover:bg-white hover:text-primary transition-all active:scale-95 flex items-center justify-center gap-2" href="#">
+                            TALK TO AN EXPERT
+                        </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer from Shared Components -->
+<footer class="full-width bg-primary dark:bg-primary-container border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-desktop py-stack-lg max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-display-lg text-headline-lg text-secondary-fixed mb-6"><img src="assets/img/Tanzania%20Safari%20Channel%20logo.png" alt="Tanzania Safari Channel" class="h-16 w-auto object-contain"></div>
+<p class="font-body-md text-on-primary/80 dark:text-on-primary-container/80 max-w-xs">Curating luxury safaris and authentic cultural experiences across the heart of Africa.</p>
+</div>
+<div class="col-span-1">
+<h5 class="font-label-caps text-label-caps text-white mb-6 uppercase">Quick Links</h5>
+<nav class="flex flex-col gap-4">
+<a class="font-body-md text-on-primary/80 hover:text-secondary-fixed-dim underline decoration-2 transition-opacity" href="about.html">About Us</a>
+<a class="font-body-md text-on-primary/80 hover:text-secondary-fixed-dim underline decoration-2 transition-opacity" href="#">Sustainability</a>
+<a class="font-body-md text-on-primary/80 hover:text-secondary-fixed-dim underline decoration-2 transition-opacity" href="#">Privacy Policy</a>
+</nav>
+</div>
+<div class="col-span-1">
+<h5 class="font-label-caps text-label-caps text-white mb-6 uppercase">Assistance</h5>
+<nav class="flex flex-col gap-4">
+<a class="font-body-md text-on-primary/80 hover:text-secondary-fixed-dim underline decoration-2 transition-opacity" href="#">Terms of Service</a>
+<a class="font-body-md text-on-primary/80 hover:text-secondary-fixed-dim underline decoration-2 transition-opacity" href="#">Travel Insurance</a>
+<a class="font-body-md text-on-primary/80 hover:text-secondary-fixed-dim underline decoration-2 transition-opacity" href="inquire.html">Contact</a>
+</nav>
+</div>
+<div class="col-span-1">
+<h5 class="font-label-caps text-label-caps text-white mb-6 uppercase">Newsletter</h5>
+<div class="relative">
+<input class="w-full bg-transparent border-0 border-b-2 border-secondary-container text-white font-body-md px-0 py-3 focus:ring-0 focus:border-secondary-fixed transition-colors" placeholder="YOUR EMAIL" type="email">
+<button class="absolute right-0 bottom-3 text-secondary-container hover:text-white transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop py-8 border-t border-white/10 text-center">
+<p class="font-body-md text-on-primary/60">Ãƒâ€šÃ‚Â© 2024 Tanzania Safari Channel. Curated Luxury Safaris. All Rights Reserved.</p>
+</div>
+</footer>
+<script>
+        // Scroll Reveal Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+        // Sticky Nav Transformation
+        const nav = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-primary', 'shadow-lg');
+                nav.classList.remove('bg-transparent');
+            } else {
+                nav.classList.add('bg-transparent');
+                nav.classList.remove('bg-primary', 'shadow-lg');
+            }
+        });
+
+        // Initialize first accordion item as active
+        document.querySelector('.group.cursor-pointer').classList.add('active');
+    </script>
+</body></html>

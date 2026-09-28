@@ -1,0 +1,359 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Serengeti National Park | Tanzania Safari Channel</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#f0eded",
+                    "on-surface-variant": "#424844",
+                    "tertiary-container": "#573b32",
+                    "on-tertiary-container": "#cda59a",
+                    "tertiary-fixed-dim": "#e7bdb1",
+                    "inverse-surface": "#313030",
+                    "on-secondary-fixed": "#271900",
+                    "secondary-fixed": "#ffdea5",
+                    "surface-dim": "#dcd9d9",
+                    "primary-fixed-dim": "#b0cdbb",
+                    "on-surface": "#1c1b1b",
+                    "secondary-fixed-dim": "#f9bd3a",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#7b5800",
+                    "on-tertiary-fixed": "#2c160e",
+                    "on-error": "#ffffff",
+                    "tertiary": "#3f251d",
+                    "surface-container-high": "#eae7e7",
+                    "on-secondary-container": "#6e4f00",
+                    "on-primary-fixed-variant": "#324c3e",
+                    "surface": "#fcf9f8",
+                    "surface-bright": "#fcf9f8",
+                    "on-tertiary-fixed-variant": "#5d4037",
+                    "inverse-primary": "#b0cdbb",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#ffdbd0",
+                    "surface-container-highest": "#e5e2e1",
+                    "error": "#ba1a1a",
+                    "surface-variant": "#e5e2e1",
+                    "on-primary-fixed": "#062014",
+                    "on-primary-container": "#98b5a3",
+                    "surface-tint": "#496455",
+                    "outline": "#727973",
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#ccead6",
+                    "inverse-on-surface": "#f3f0ef",
+                    "primary-container": "#2d4739",
+                    "outline-variant": "#c2c8c2",
+                    "surface-container-low": "#f6f3f2",
+                    "on-background": "#1c1b1b",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "primary": "#173124",
+                    "on-secondary-fixed-variant": "#5d4200",
+                    "background": "#fcf9f8",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#fcbf3c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-md": "32px",
+                    "unit": "8px",
+                    "container-max": "1280px",
+                    "stack-sm": "16px",
+                    "gutter": "32px",
+                    "stack-lg": "80px",
+                    "margin-mobile": "24px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Montserrat"],
+                    "headline-md": ["Montserrat"],
+                    "display-lg-mobile": ["Montserrat"],
+                    "body-md": ["Work Sans"],
+                    "label-caps": ["Work Sans"],
+                    "headline-lg": ["Montserrat"],
+                    "body-lg": ["Work Sans"]
+            },
+            "fontSize": {
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(23, 49, 36, 0.4), rgba(23, 49, 36, 0.8));
+        }
+        .text-underline-reveal {
+            position: relative;
+        }
+        .text-underline-reveal::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #fcbf3c;
+            transition: width 0.3s ease;
+        }
+        .text-underline-reveal:hover::after {
+            width: 100%;
+        }
+        .editorial-image-mask {
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        }
+        .sticky-nav-active {
+            background-color: rgba(23, 49, 36, 0.95) !important;
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="docked full-width top-0 sticky z-50 bg-transparent transition-all duration-500" id="main-nav">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="font-display-lg text-headline-md font-bold text-primary dark:text-inverse-primary tracking-tight"><img src="assets/img/Tanzania%20Safari%20Channel%20logo.png" alt="Tanzania Safari Channel" class="h-14 w-auto object-contain"></div>
+<div class="hidden md:flex items-center gap-gutter"><a class="font-body-md text-body-md uppercase tracking-wider text-black hover:text-secondary-container transition-colors duration-300" href="index.html">Home</a><a class="font-body-md text-body-md uppercase tracking-wider text-secondary-container border-b-2 border-secondary-container pb-1 transition-colors duration-300" href="index.html#destinations">Destinations</a><a class="font-body-md text-body-md uppercase tracking-wider text-black hover:text-secondary-container transition-colors duration-300" href="honeymoon.html">Honeymoon Deals</a><a class="font-body-md text-body-md uppercase tracking-wider text-black hover:text-secondary-container transition-colors duration-300" href="foreigner-tours.html">Foreigner Tours</a><a class="font-body-md text-body-md uppercase tracking-wider text-black hover:text-secondary-container transition-colors duration-300" href="car-rentals.html">Car Rentals</a></div>
+<a class="bg-primary text-on-primary px-8 py-3 font-label-caps uppercase tracking-widest hover:bg-secondary-container hover:text-primary transition-all duration-300 scale-100 active:scale-95" href="inquire.html">Inquire Now</a>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center scale-105" data-alt="A cinematic, high-resolution wide shot of the vast Serengeti plains at sunset, featuring a massive herd of wildebeest and zebras stretching across the horizon during the Great Migration. The lighting is warm and golden, casting long shadows across the golden-yellow savannah grass. The sky is a deep orange and purple. The overall mood is epic, serene, and majestic, capturing the essence of a luxury editorial travel journal." style="background-image: url('assets/img/image-027.jpg')"></div>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-desktop w-full">
+<div class="max-w-3xl">
+<span class="font-label-caps text-secondary-fixed uppercase tracking-[0.4em] mb-stack-sm block">Legendary Wilderness</span>
+<h1 class="font-display-lg text-display-lg text-white mb-stack-sm">Serengeti National Park</h1>
+<p class="font-headline-lg text-headline-lg text-white/90 font-light italic">The Eternal Cycle of Life</p>
+<div class="mt-stack-md flex gap-gutter">
+<a class="bg-primary text-on-primary px-10 py-4 font-label-caps uppercase tracking-widest hover:bg-secondary-container hover:text-primary transition-all duration-300 border border-transparent" href="#migration">Explore The Park</a>
+<a class="border-2 border-white text-white px-10 py-4 font-label-caps uppercase tracking-widest hover:bg-white hover:text-primary transition-all duration-300" href="#packages">Safari Packages</a>
+</div>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center animate-bounce text-white/60">
+<span class="font-label-caps mb-2">Scroll</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</section>
+<!-- Section 1: The Great Migration -->
+<section class="py-stack-lg bg-surface relative overflow-hidden" id="migration">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7">
+<div class="relative group">
+<div class="w-full h-[600px] bg-cover bg-center editorial-image-mask" data-alt="An intense, close-up photography shot of wildebeests leaping into the Mara River during the Great Migration. Water splashes around them in high-detail, frozen in time. The lighting is sharp, mid-day African sun highlighting the texture of their fur and the churn of the water. The aesthetic is raw, authentic, and evocative of a premium NatGeo photo essay." style="background-image: url('assets/img/image-028.jpg')"></div>
+<div class="absolute -bottom-8 -right-8 bg-white p-8 max-w-xs shadow-none border border-outline-variant hidden md:block">
+<p class="font-label-caps text-secondary mb-2">Did You Know?</p>
+<p class="font-body-md text-on-surface">Over 1.5 million wildebeest migrate in a circular route across the Serengeti-Mara ecosystem every year.</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 lg:pl-12">
+<span class="font-label-caps text-secondary uppercase tracking-widest">Natural Wonders</span>
+<h2 class="font-display-lg text-headline-lg text-primary mt-stack-sm mb-stack-md">The Great Migration</h2>
+<p class="font-body-lg text-on-surface-variant mb-stack-sm leading-relaxed">
+                    Witness one of the most spectacular events in the natural world. The Great Migration is not just a movement; it's a relentless, ancient quest for survival that defines the rhythm of the Serengeti.
+                </p>
+<p class="font-body-md text-on-surface-variant mb-stack-md leading-relaxed">
+                    From the calving season in the southern plains to the perilous river crossings in the north, millions of hooves thunder across the earth, followed closely by the park's formidable predators. It is a raw, unscripted drama of birth, struggle, and survival played out on a stage of infinite beauty.
+                </p>
+<ul class="space-y-4 mb-stack-md">
+<li class="flex items-start gap-4">
+<span class="w-2 h-2 mt-2 bg-secondary-container flex-shrink-0"></span>
+<span class="font-body-md text-primary">Calving Season: January to March</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="w-2 h-2 mt-2 bg-secondary-container flex-shrink-0"></span>
+<span class="font-body-md text-primary">River Crossings: July to September</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Section 2: Wildlife & Predators (Bento Style) -->
+<section class="py-stack-lg bg-surface-container">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-stack-lg">
+<span class="font-label-caps text-secondary uppercase tracking-widest">Apex Experiences</span>
+<h2 class="font-display-lg text-headline-lg text-primary mt-stack-sm">Wildlife &amp; Predators</h2>
+<div class="w-24 h-1 bg-secondary-container mx-auto mt-stack-sm"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[800px] md:h-[600px]">
+<div class="md:col-span-2 md:row-span-2 relative overflow-hidden group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A portrait of a majestic male lion with a full dark mane, resting on a rocky outcropping or kopje in the Serengeti. The lighting is soft morning light, highlighting the golden hues of its fur and the intensity in its eyes. The background is a soft-focus blur of the endless plains. Professional wildlife photography style, high-end editorial quality." style="background-image: url('assets/img/image-029.jpg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-8">
+<div>
+<h3 class="font-headline-md text-white">The King's Domain</h3>
+<p class="text-white/80 font-body-md">Home to the highest density of lions in Africa.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-2 relative overflow-hidden group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A leopard camouflaged perfectly within the branches of an acacia tree, looking down with intense focus. The dappled sunlight filters through the leaves, creating a high-contrast, artistic lighting effect on the leopard's spots. Deep greens and earthy browns dominate the palette." style="background-image: url('assets/img/image-030.jpg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent flex items-end p-6">
+<h3 class="font-headline-md text-white">Elusive Leopards</h3>
+</div>
+</div>
+<div class="relative overflow-hidden group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A close-up of a cheetah in mid-stride, showcasing incredible muscle definition and focus. The background is a blur of speed and savannah colors." style="background-image: url('assets/img/image-031.jpg')"></div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+</div>
+<div class="relative overflow-hidden group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A family of elephants walking in a line across the horizon at dusk, silhouetted against a deep red and orange sky. Large tuskers leading the way." style="background-image: url('assets/img/image-032.jpg')"></div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Luxury Under Canvas -->
+<section class="py-stack-lg bg-white overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div class="order-2 lg:order-1">
+<span class="font-label-caps text-secondary uppercase tracking-widest">Refined Wilderness</span>
+<h2 class="font-display-lg text-headline-lg text-primary mt-stack-sm mb-stack-md">Luxury Under Canvas</h2>
+<p class="font-body-lg text-on-surface-variant mb-stack-sm leading-relaxed">
+                    Experience the wild without compromising on elegance. Our curated selection of mobile migration camps follows the herds, ensuring you are always at the heart of the action.
+                </p>
+<div class="grid grid-cols-2 gap-stack-sm mb-stack-md">
+<div class="border-l-2 border-secondary-container pl-4">
+<h4 class="font-headline-md text-primary">Mobile Camps</h4>
+<p class="font-body-md text-on-surface-variant">Follow the migration as it moves across the park.</p>
+</div>
+<div class="border-l-2 border-secondary-container pl-4">
+<h4 class="font-headline-md text-primary">Luxury Lodges</h4>
+<p class="font-body-md text-on-surface-variant">Iconic, permanent structures with world-class amenities.</p>
+</div>
+</div>
+<button class="bg-primary text-on-primary px-10 py-4 font-label-caps uppercase tracking-widest hover:bg-secondary-container hover:text-primary transition-all duration-300">Discover Lodges</button>
+</div>
+<div class="order-1 lg:order-2 relative">
+<div class="aspect-[4/5] bg-cover bg-center" data-alt="The interior of a high-end luxury safari tent in the Serengeti. A massive four-poster bed with crisp white linens and mosquito netting sits on a polished dark wood floor. Through the open canvas flap, the vast golden plains are visible. The decor is colonial-chic with brass accents, leather chairs, and a hand-woven rug. Soft, warm lighting from antique lanterns." style="background-image: url('assets/img/image-033.jpg')"></div>
+<div class="absolute -left-12 bottom-12 w-64 h-64 bg-secondary-fixed hidden xl:block p-8 flex flex-col justify-center">
+<p class="font-display-lg text-primary text-5xl font-bold">5ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦</p>
+<p class="font-label-caps text-primary uppercase tracking-widest">Luxury Standard</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Serengeti From Above -->
+<section class="relative h-[819px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-fixed bg-center" data-alt="A spectacular aerial view from a hot air balloon over the Serengeti at dawn. Several other colorful balloons are seen in the distance, drifting over a winding river and scattered acacia trees. The sun is just breaking the horizon, bathing the entire landscape in a soft, ethereal pink and gold light. The vastness of the park is visible in every direction." style="background-image: url('assets/img/image-034.jpg')"></div>
+<div class="absolute inset-0 bg-primary/30 mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 text-center px-margin-desktop max-w-4xl">
+<span class="font-label-caps text-secondary-fixed uppercase tracking-[0.5em] mb-stack-sm block">A New Perspective</span>
+<h2 class="font-display-lg text-display-lg text-white mb-stack-md">Serengeti From Above</h2>
+<p class="font-body-lg text-white/90 mb-stack-lg leading-relaxed max-w-2xl mx-auto">
+                As the first light of dawn touches the horizon, float silently over the vast plains in a hot air balloon. Witness the wildlife stirring below and the true scale of the infinite Serengeti.
+            </p>
+<button class="border-2 border-white text-white px-12 py-5 font-label-caps uppercase tracking-[0.2em] hover:bg-white hover:text-primary transition-all duration-500 group">
+                Book Flight <span class="material-symbols-outlined align-middle ml-2 group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</button>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-stack-lg bg-primary text-on-primary" id="packages">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center">
+<h2 class="font-display-lg text-headline-lg text-secondary-fixed mb-stack-md">Ready to begin your journey?</h2>
+<p class="font-body-lg text-on-primary/80 mb-stack-lg max-w-2xl mx-auto">
+                Whether you're seeking the thrill of the migration or the serenity of a luxury lodge, our specialists will craft the perfect Serengeti experience for you.
+            </p>
+<div class="flex flex-col md:flex-row justify-center items-center gap-gutter">
+<button class="bg-secondary-container text-primary px-12 py-4 font-label-caps uppercase tracking-widest hover:bg-white transition-all duration-300 w-full md:w-auto">View Safari Packages</button>
+<button class="border-2 border-on-primary text-on-primary px-12 py-4 font-label-caps uppercase tracking-widest hover:bg-on-primary hover:text-primary transition-all duration-300 w-full md:w-auto">Plan Your Serengeti Trip</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-desktop py-stack-lg max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<div class="font-display-lg text-headline-lg text-secondary-fixed mb-stack-sm">TSC</div>
+<p class="font-body-md text-on-primary/80">Curated luxury safaris and authentic Tanzanian experiences. Discover the soul of Africa.</p>
+</div>
+<div class="space-y-4">
+<h5 class="font-label-caps text-secondary-fixed uppercase tracking-widest mb-4">Quick Links</h5>
+<ul class="space-y-2">
+<li class=""><a class="font-body-md text-on-primary/80 hover:text-secondary-fixed-dim underline decoration-2 transition-opacity" href="about.html">About Us</a></li>
+<li class=""><a class="font-body-md text-on-primary/80 hover:text-secondary-fixed-dim underline decoration-2 transition-opacity" href="#">Sustainability</a></li>
+<li class=""><a class="font-body-md text-on-primary/80 hover:text-secondary-fixed-dim underline decoration-2 transition-opacity" href="#">Travel Insurance</a></li>
+<li class=""><a class="font-body-md text-on-primary/80 hover:text-secondary-fixed-dim underline decoration-2 transition-opacity" href="inquire.html">Contact</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-label-caps text-secondary-fixed uppercase tracking-widest mb-4">Legal</h5>
+<ul class="space-y-2">
+<li class=""><a class="font-body-md text-on-primary/80 hover:text-secondary-fixed-dim underline decoration-2 transition-opacity" href="#">Privacy Policy</a></li>
+<li class=""><a class="font-body-md text-on-primary/80 hover:text-secondary-fixed-dim underline decoration-2 transition-opacity" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-label-caps text-secondary-fixed uppercase tracking-widest mb-4">Newsletter</h5>
+<p class="font-body-md text-on-primary/80 mb-4">Join our explorer list for exclusive safari offers.</p>
+<div class="relative border-b-2 border-secondary-container">
+<input class="bg-transparent border-none w-full py-2 text-white focus:ring-0 placeholder:text-white/40" placeholder="Email Address" type="email">
+<button class="absolute right-0 top-1/2 -translate-y-1/2 text-secondary-container">
+<span class="material-symbols-outlined">trending_flat</span>
+</button>
+</div>
+</div>
+</div>
+<div class="border-t border-white/10 py-6 text-center">
+<p class="font-body-md text-on-primary/60">Ãƒâ€šÃ‚Â© 2024 Tanzania Safari Channel. Curated Luxury Safaris. All Rights Reserved.</p>
+</div>
+</footer>
+<script>
+        // Sticky Nav logic
+        const header = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('sticky-nav-active');
+                header.classList.remove('bg-transparent');
+                header.querySelector('nav').classList.remove('py-6');
+                header.querySelector('nav').classList.add('py-3');
+            } else {
+                header.classList.remove('sticky-nav-active');
+                header.classList.add('bg-transparent');
+                header.querySelector('nav').classList.add('py-6');
+                header.querySelector('nav').classList.remove('py-3');
+            }
+        });
+
+        // Parallax simple effect
+        window.addEventListener('scroll', () => {
+            const parallax = document.querySelectorAll('.bg-fixed');
+            parallax.forEach(el => {
+                let offset = window.pageYOffset;
+                el.style.backgroundPositionY = offset * 0.4 + "px";
+            });
+        });
+    </script>
+
+
+</body></html>
