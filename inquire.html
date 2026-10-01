@@ -100,18 +100,10 @@
         },
       }
     </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        @layer base {
-            html {
-                scroll-behavior: smooth;
-            }
-        }
-    </style>
+<link rel="stylesheet" href="assets/css/inquire.css">
+<link rel="stylesheet" href="assets/css/site.css">
 <meta content="web_standard" name="shell-type"/></head>
-<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed" data-page="inquire">
 <!-- Top Navigation Bar -->
 <nav class="sticky top-0 z-50 bg-surface/95 backdrop-blur-md border-b border-surface-container-high transition-colors duration-300" data-active-classes="text-secondary-fixed-dim border-b-2 border-secondary-container font-semibold pb-1" id="main-nav">
 <div class="h-20 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
@@ -152,7 +144,7 @@
 <div class="lg:col-span-4 bg-primary text-on-primary p-8 space-y-4">
 <div class="flex items-center justify-between border-b border-primary-container pb-4">
 <span class="font-label-caps text-label-caps uppercase text-secondary-fixed tracking-wider">Response Window</span>
-<span class="font-headline-md text-sm font-semibold tracking-tight text-white">≤ 4 Hours</span>
+<span class="font-headline-md text-sm font-semibold tracking-tight text-white">&le; 4 Hours</span>
 </div>
 <div class="flex items-center justify-between border-b border-primary-container pb-4">
 <span class="font-label-caps text-label-caps uppercase text-secondary-fixed tracking-wider">Concierge Desk</span>
@@ -187,7 +179,7 @@
                 Tanzania Safari Channel HQ, P.O. Box 1844, Arusha, Tanzania
               </p>
 <div class="mt-4 flex flex-col space-y-1 font-body-md text-sm text-primary font-medium">
-<a class="hover:text-secondary transition-colors" href="tel:+255784123456">+255 784 123 456</a>
+<a class="hover:text-secondary transition-colors" data-phone-contact="field-desk" href="tel:+255784123456"><span data-whatsapp-display="field-desk">+255 784 123 456</span></a>
 <a class="hover:text-secondary transition-colors" href="tel:+255272508899">+255 27 250 8899</a>
 </div>
 </div>
@@ -215,8 +207,8 @@
 <p class="font-body-md text-sm text-on-primary/80">
               Speak directly with an on-duty safari specialist in Arusha for urgent inquiries or personalized group estimates.
             </p>
-<a class="inline-flex items-center justify-between w-full bg-secondary-container text-on-secondary-container px-5 py-3 font-label-caps uppercase tracking-wider font-bold hover:bg-secondary-fixed transition-colors" href="https://wa.me/255614077079" rel="noopener noreferrer" target="_blank">
-<span>Chat With A Specialist (+255 700 000 000)</span>
+<a class="inline-flex items-center justify-between w-full bg-secondary-container text-on-secondary-container px-5 py-3 font-label-caps uppercase tracking-wider font-bold hover:bg-secondary-fixed transition-colors" data-whatsapp-contact="concierge" href="https://wa.me/255700000000" rel="noopener noreferrer" target="_blank">
+<span>Chat With A Specialist (<span data-whatsapp-display="concierge">+255 700 000 000</span>)</span>
 <span class="material-symbols-outlined text-sm">arrow_outward</span>
 </a>
 </div>
@@ -226,7 +218,7 @@
 <span class="material-symbols-outlined text-primary mt-0.5">schedule</span>
 <div>
 <p class="font-bold text-on-surface">Operating Hours (East Africa Time)</p>
-<p>Monday – Saturday: 07:30 – 19:30 EAT</p>
+<p>Monday &ndash; Saturday: 07:30 &ndash; 19:30 EAT</p>
 <p class="text-xs text-tertiary mt-1 font-medium">24/7 dedicated line for guests currently in-country on safari.</p>
 </div>
 </div>
@@ -242,7 +234,7 @@
 <div class="relative overflow-hidden bg-surface-container-high h-64">
 <img class="w-full h-full object-cover" data-alt="Serengeti luxury tented camp terrace during golden hour sunset with canvas chairs overlooking acacia savannah, warm amber and dark forest green tones, high fashion luxury safari editorial photography" src="assets/img/inquire-01.jpg"/>
 <div class="absolute bottom-0 left-0 bg-primary/90 text-white px-4 py-2 font-label-caps text-xs tracking-widest uppercase">
-              Field Station Arusha • Northern Circuit Ops
+              Field Station Arusha &bull; Northern Circuit Ops
             </div>
 </div>
 </div>
@@ -281,7 +273,7 @@
 </div>
 </div>
 <!-- PRIMARY INQUIRY FORM -->
-<form class="space-y-8" id="safari-inquiry-form" onsubmit="event.preventDefault(); window.handleSafariSubmit();">
+<form class="space-y-8" id="safari-inquiry-form">
 <div>
 <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-bold block mb-1">Tailored Portfolio</span>
 <h2 class="font-headline-lg text-headline-lg text-primary font-bold">Bespoke Safari Specification</h2>
@@ -390,9 +382,9 @@
               </label>
 <div class="relative">
 <select class="w-full bg-surface-container-low border-b-2 border-surface-dim focus:border-primary focus:bg-white text-on-surface font-body-md px-3 py-3 rounded-none focus:outline-none transition-all appearance-none cursor-pointer" id="budget" name="budget">
-<option value="comfort">Comfort Safari (TZS 7,936,000 - TZS 13,226,000)</option>
-<option selected="" value="luxury-classic">Luxury Classic (TZS 13,226,000 - TZS 21,161,000)</option>
-<option value="ultra-luxury">Ultra-Luxury Bespoke (TZS 21,161,000+)</option>
+<option value="comfort">Comfort Safari ($3,000 &ndash; $5,000 USD)</option>
+<option selected="" value="luxury-classic">Luxury Classic ($5,000 &ndash; $8,000 USD)</option>
+<option value="ultra-luxury">Ultra-Luxury Bespoke ($8,000+ USD)</option>
 <option value="flexible">Custom / Completely Flexible</option>
 </select>
 <span class="material-symbols-outlined absolute right-3 top-3 pointer-events-none text-on-surface-variant">expand_more</span>
@@ -491,7 +483,7 @@
 </div>
 </section>
 </div>
-<script src="assets/js/site.js"></script></main>
+</main>
 <!-- Footer -->
 <footer class="bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container border-t border-primary-container">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-mobile md:px-margin-desktop py-stack-lg max-w-container-max mx-auto">
@@ -539,7 +531,8 @@
 </div>
 </div>
 <div class="border-t border-white/10 py-8 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center md:text-left">
-<p class="text-xs text-on-primary/60 uppercase tracking-widest">© 2024 Tanzania Safari Channel. Curated Luxury Safaris. All Rights Reserved.</p>
+<p class="text-xs text-on-primary/60 uppercase tracking-widest">&copy; 2024 Tanzania Safari Channel. Curated Luxury Safaris. All Rights Reserved.</p>
 </div>
 </footer>
+<script src="assets/js/site.js"></script>
 </body></html>

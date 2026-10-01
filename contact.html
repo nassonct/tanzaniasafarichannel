@@ -102,8 +102,9 @@
       }
     </script>
 <link rel="stylesheet" href="assets/css/contact.css">
+<link rel="stylesheet" href="assets/css/site.css">
 <meta content="web_standard" name="shell-type"/></head>
-<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed" data-page="contact">
 <!-- Top Navigation Bar -->
 <nav class="sticky top-0 z-50 bg-surface/95 backdrop-blur-md border-b border-surface-container-high transition-colors duration-300" data-active-classes="text-secondary-fixed-dim border-b-2 border-secondary-container font-semibold pb-1" id="main-nav">
 <div class="h-20 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
@@ -134,11 +135,11 @@
 <span class="hidden sm:inline">24/7 Satellite Bush Dispatch &amp; Flying Doctors Link Open</span>
 </div>
 <div class="flex items-center gap-6">
-<a class="hover:text-primary transition-colors flex items-center gap-1 font-semibold" href="tel:+255784123456">
+<a class="hover:text-primary transition-colors flex items-center gap-1 font-semibold" data-phone-contact="field-desk" href="tel:+255784123456">
 <span class="material-symbols-outlined text-sm">phone_in_talk</span>
-          +255 784 123 456
+          <span data-whatsapp-display="field-desk">+255 784 123 456</span>
         </a>
-<a class="hover:text-primary transition-colors flex items-center gap-1 font-semibold" href="https://wa.me/255784123456">
+<a class="hover:text-primary transition-colors flex items-center gap-1 font-semibold" data-whatsapp-contact="field-desk" href="https://wa.me/255784123456">
 <span class="material-symbols-outlined text-sm">chat</span>
           WhatsApp Field Desk
         </a>
@@ -188,7 +189,7 @@
             </p>
 </div>
 <div class="pt-6">
-<a class="inline-flex items-center justify-center w-full bg-primary text-on-primary py-3 px-4 font-label-caps tracking-widest uppercase hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="tel:+255784123456">
+<a class="inline-flex items-center justify-center w-full bg-primary text-on-primary py-3 px-4 font-label-caps tracking-widest uppercase hover:bg-secondary-container hover:text-on-secondary-container transition-colors" data-phone-contact="field-desk" href="tel:+255784123456">
               Call Field Dispatch
             </a>
 </div>
@@ -206,7 +207,7 @@
             </p>
 </div>
 <div class="pt-6">
-<a class="inline-flex items-center justify-center w-full bg-secondary text-on-secondary py-3 px-4 font-label-caps tracking-widest uppercase hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="https://wa.me/255614077079">
+<a class="inline-flex items-center justify-center w-full bg-secondary text-on-secondary py-3 px-4 font-label-caps tracking-widest uppercase hover:bg-secondary-container hover:text-on-secondary-container transition-colors" data-whatsapp-contact="field-desk" href="https://wa.me/255784123456">
               Launch WhatsApp
             </a>
 </div>
@@ -245,7 +246,7 @@
               Send your request straight to our lead safari planner on duty. Replies dispatched within 2 hours during EAT hours.
             </p>
 </div>
-<form class="space-y-6" id="safari-contact-form" onsubmit="event.preventDefault(); document.getElementById('form-success').classList.remove('hidden'); this.reset();">
+<form class="space-y-6" id="safari-contact-form">
 <div>
 <label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block mb-2" for="contact-name">Full Name</label>
 <input class="w-full bg-surface-container-low px-4 py-3 text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none transition-colors" id="contact-name" placeholder="Lord / Lady / Dr. / First Last" required="" type="text"/>
@@ -305,7 +306,7 @@
                   </div>
 <div>
 <span class="block text-primary font-bold">Direct Line</span>
-                    +255 784 123 456
+                    <span data-whatsapp-display="field-desk">+255 784 123 456</span>
                   </div>
 <div>
 <span class="block text-primary font-bold">Fleet Access</span>
@@ -578,4 +579,5 @@
 <p class="text-xs text-on-primary/60 uppercase tracking-widest">© 2024 Tanzania Safari Channel. Curated Luxury Safaris. All Rights Reserved.</p>
 </div>
 </footer>
+<script src="assets/js/site.js"></script>
 </body></html>
