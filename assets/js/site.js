@@ -167,6 +167,10 @@
   }
 
   function initializeKilimanjaroPage() {
+    if (document.body.dataset.page !== "kilimanjaro") {
+      return;
+    }
+
     var nav = document.getElementById("main-nav");
     if (!nav) {
       return;
@@ -196,6 +200,10 @@
   }
 
   function initializeNgorongoroPage() {
+    if (document.body.dataset.page !== "ngorongoro") {
+      return;
+    }
+
     var nav = document.getElementById("main-nav");
     if (!nav) {
       return;
@@ -232,6 +240,10 @@
   }
 
   function initializeSerengetiPage() {
+    if (document.body.dataset.page !== "serengeti") {
+      return;
+    }
+
     var nav = document.getElementById("main-nav");
     if (!nav) {
       return;
