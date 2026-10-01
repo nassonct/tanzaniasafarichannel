@@ -111,7 +111,7 @@
         }
     </style>
 <meta content="web_standard" name="shell-type"/></head>
-<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed" data-active-path="car-rentals.html">
 <!-- Top Navigation Bar -->
 <nav class="sticky top-0 z-50 bg-surface/95 backdrop-blur-md border-b border-surface-container-high transition-colors duration-300" data-active-classes="text-secondary-fixed-dim border-b-2 border-secondary-container font-semibold pb-1" id="main-nav">
 <div class="h-20 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
@@ -131,17 +131,6 @@
 </div>
 </nav>
 <main class="relative z-10 pt-20" id="content"><div class="flex flex-col w-full">
-<!-- Interactive Active Nav Modifier Script for App Shell -->
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const navLinks = document.querySelectorAll('#main-nav a[data-path]');
-      navLinks.forEach(link => {
-        if (link.getAttribute('data-path') === 'car-rentals.html') {
-          link.classList.add('text-secondary-fixed-dim', 'font-semibold');
-        }
-      });
-    });
-  </script>
 <!-- Section 1: Hero Section -->
 <section class="relative bg-primary text-on-primary overflow-hidden -mt-20 pt-28 pb-stack-lg">
 <!-- Atmospheric Ambient Lighting Gradient (No borders) -->
@@ -685,12 +674,4 @@
 <input class="bg-transparent border-none focus:ring-0 text-white placeholder:text-white/40 w-full font-label-caps text-xs focus:outline-none" placeholder="YOUR EMAIL" type="email"/>
 <button aria-label="Submit newsletter email" class="text-secondary-fixed hover:text-secondary-container transition-colors">
 <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-<div class="border-t border-white/10 py-8 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center md:text-left">
-<p class="text-xs text-on-primary/60 uppercase tracking-widest">© 2024 Tanzania Safari Channel. Curated Luxury Safaris. All Rights Reserved.</p>
-</div>
-</footer>
-</body></html>
+<script src="assets/js/site.js"></script>

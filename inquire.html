@@ -491,42 +491,7 @@
 </div>
 </section>
 </div>
-<script>
-  (function() {
-    window.handleSafariSubmit = function() {
-      var form = document.getElementById('safari-inquiry-form');
-      var successBlock = document.getElementById('inquiry-success');
-      var refNumber = 'TZ-' + Math.floor(10000 + Math.random() * 90000);
-      
-      var refEl = document.getElementById('success-ref');
-      if (refEl) {
-        refEl.textContent = refNumber;
-      }
-
-      if (form && successBlock) {
-        form.classList.add('hidden');
-        successBlock.classList.remove('hidden');
-        successBlock.classList.add('flex');
-        successBlock.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    };
-
-    var resetBtn = document.getElementById('reset-inquiry-btn');
-    if (resetBtn) {
-      resetBtn.addEventListener('click', function() {
-        var form = document.getElementById('safari-inquiry-form');
-        var successBlock = document.getElementById('inquiry-success');
-        if (form && successBlock) {
-          form.reset();
-          successBlock.classList.add('hidden');
-          successBlock.classList.remove('flex');
-          form.classList.remove('hidden');
-          form.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    }
-  })();
-</script></main>
+<script src="assets/js/site.js"></script></main>
 <!-- Footer -->
 <footer class="bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container border-t border-primary-container">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-mobile md:px-margin-desktop py-stack-lg max-w-container-max mx-auto">

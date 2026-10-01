@@ -730,29 +730,7 @@
 </div>
 </section>
 </div>
-<script>
-  // Simple quick filter interaction for home search input
-  document.addEventListener('DOMContentLoaded', () => {
-    const searchInput = document.getElementById('destination-search-input');
-    if (searchInput) {
-      searchInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') {
-          const query = searchInput.value.trim().toLowerCase();
-          if (query.includes('zanzibar') || query.includes('beach')) {
-            window.location.href = 'honeymoon.html';
-          } else if (query.includes('car') || query.includes('4x4') || query.includes('rental')) {
-            window.location.href = 'car-rentals.html';
-          } else if (query.includes('tour') || query.includes('kilimanjaro')) {
-            window.location.href = 'foreigner-tours.html';
-          } else {
-            const destElem = document.getElementById('destinations');
-            if (destElem) destElem.scrollIntoView({ behavior: 'smooth' });
-          }
-        }
-      });
-    }
-  });
-</script></main>
+<script src="assets/js/site.js"></script></main>
 <!-- Footer -->
 <footer class="bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container border-t border-primary-container">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-mobile md:px-margin-desktop py-stack-lg max-w-container-max mx-auto">

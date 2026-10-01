@@ -328,32 +328,7 @@
 <p class="font-body-md text-on-primary/60">© 2024 Tanzania Safari Channel. Curated Luxury Safaris. All Rights Reserved.</p>
 </div>
 </footer>
-<script>
-        // Sticky Nav logic
-        const header = document.getElementById('main-nav');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                header.classList.add('sticky-nav-active');
-                header.classList.remove('bg-transparent');
-                header.querySelector('nav').classList.remove('py-6');
-                header.querySelector('nav').classList.add('py-3');
-            } else {
-                header.classList.remove('sticky-nav-active');
-                header.classList.add('bg-transparent');
-                header.querySelector('nav').classList.add('py-6');
-                header.querySelector('nav').classList.remove('py-3');
-            }
-        });
-
-        // Parallax simple effect
-        window.addEventListener('scroll', () => {
-            const parallax = document.querySelectorAll('.bg-fixed');
-            parallax.forEach(el => {
-                let offset = window.pageYOffset;
-                el.style.backgroundPositionY = offset * 0.4 + "px";
-            });
-        });
-    </script>
+<script src="assets/js/site.js"></script>
 
 
 </body></html>

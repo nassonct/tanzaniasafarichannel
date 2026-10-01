@@ -111,7 +111,7 @@
         }
     </style>
 <meta content="web_standard" name="shell-type"/></head>
-<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed" data-active-path="honeymoon.html">
 <!-- Top Navigation Bar -->
 <nav class="sticky top-0 z-50 bg-surface/95 backdrop-blur-md border-b border-surface-container-high transition-colors duration-300" data-active-classes="text-secondary-fixed-dim border-b-2 border-secondary-container font-semibold pb-1" id="main-nav">
 <div class="h-20 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
@@ -131,18 +131,6 @@
 </div>
 </nav>
 <main class="relative z-10 pt-20" id="content"><div class="flex flex-col w-full">
-<!-- Interactive Navigation Active State Script -->
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const navLinks = document.querySelectorAll("#main-nav a");
-      navLinks.forEach(link => {
-        if (link.getAttribute("href") === "honeymoon.html" || link.getAttribute("data-path") === "honeymoon.html") {
-          link.classList.add("text-secondary", "font-semibold", "border-b-2", "border-secondary-container");
-          link.classList.remove("text-on-surface");
-        }
-      });
-    });
-  </script>
 <!-- Hero Section -->
 <section class="relative w-full overflow-hidden bg-primary text-on-primary">
 <div class="absolute inset-0 z-0">
@@ -717,4 +705,5 @@
 <p class="text-xs text-on-primary/60 uppercase tracking-widest">© 2024 Tanzania Safari Channel. Curated Luxury Safaris. All Rights Reserved.</p>
 </div>
 </footer>
+<script src="assets/js/site.js"></script>
 </body></html>

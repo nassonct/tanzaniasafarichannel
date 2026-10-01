@@ -339,32 +339,7 @@
             © 2024 Tanzania Safari Channel. Curated Luxury Safaris. All Rights Reserved.
         </div>
 </footer>
-<script>
-        // Subtle scroll effects for the nav
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('main-nav');
-            if (window.scrollY > 100) {
-                nav.classList.add('bg-white', 'shadow-sm');
-                nav.classList.remove('bg-transparent');
-                nav.querySelectorAll('a').forEach(link => {
-                    if (!link.classList.contains('text-secondary-container')) {
-                        link.classList.add('text-primary');
-                        link.classList.remove('text-white');
-                    }
-                });
-                nav.querySelector('.text-primary').classList.replace('text-white', 'text-primary');
-            } else {
-                nav.classList.add('bg-transparent');
-                nav.classList.remove('bg-white', 'shadow-sm');
-                nav.querySelectorAll('a').forEach(link => {
-                    if (!link.classList.contains('text-secondary-container')) {
-                        link.classList.add('text-white');
-                        link.classList.remove('text-primary');
-                    }
-                });
-            }
-        });
-    </script>
+<script src="assets/js/site.js"></script>
 
 
 </body></html>

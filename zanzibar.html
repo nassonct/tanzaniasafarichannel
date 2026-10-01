@@ -285,53 +285,7 @@
 </div>
 </div>
 </footer>
-<script>
-        // Simple Navbar effect on scroll
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('top-nav');
-            if (window.scrollY > 50) {
-                nav.classList.remove('bg-transparent');
-                nav.classList.add('bg-white/95', 'backdrop-blur-sm', 'shadow-sm');
-                nav.querySelector('.text-primary').classList.add('text-primary'); // Keep logo dark
-                const links = nav.querySelectorAll('a');
-                links.forEach(link => {
-                    if(!link.classList.contains('text-secondary-container')) {
-                        link.classList.remove('text-white');
-                        link.classList.add('text-primary');
-                    }
-                });
-            } else {
-                nav.classList.add('bg-transparent');
-                nav.classList.remove('bg-white/95', 'backdrop-blur-sm', 'shadow-sm');
-                const links = nav.querySelectorAll('a');
-                links.forEach(link => {
-                    if(!link.classList.contains('text-secondary-container')) {
-                        link.classList.add('text-white');
-                        link.classList.remove('text-primary');
-                    }
-                });
-            }
-        });
-
-        // Intersection Observer for fade-in animations
-        const observerOptions = {
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100', 'translate-y-0');
-                    entry.target.classList.remove('opacity-0', 'translate-y-10');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('section').forEach(section => {
-            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
-            observer.observe(section);
-        });
-    </script>
+<script src="assets/js/site.js"></script>
 
 
 </body></html>
